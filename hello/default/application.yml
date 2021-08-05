@@ -1,0 +1,3 @@
+---
+hello:
+  name: ${common.hello.name}

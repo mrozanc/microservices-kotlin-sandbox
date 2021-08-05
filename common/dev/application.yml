@@ -1,0 +1,4 @@
+---
+common:
+  hello:
+    name: ${common.hello.name}-dev
