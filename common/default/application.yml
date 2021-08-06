@@ -2,4 +2,4 @@
 common:
   env: default
   hello:
-    name: default
+    name: World
