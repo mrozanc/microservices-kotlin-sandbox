@@ -1,4 +1,6 @@
 ---
 common:
-  hello:
-    name: ${common.hello.name}-dev
+  env: dev
+
+hello:
+  name: ${common.hello.name}-dev

@@ -1,4 +1,5 @@
 ---
 common:
+  env: default
   hello:
     name: default
