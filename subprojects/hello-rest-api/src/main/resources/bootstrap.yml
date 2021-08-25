@@ -1,0 +1,15 @@
+---
+spring:
+  application:
+    name: hello
+  config:
+    import: "configserver:"
+  cloud:
+    config:
+      enabled: true
+      uri: http://localhost:8888/config
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://127.0.0.1:9000

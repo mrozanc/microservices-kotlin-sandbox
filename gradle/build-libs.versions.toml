@@ -1,0 +1,18 @@
+[versions]
+
+# Dependencies versions
+credentials-plugin = "2.1"
+dokka-plugin = "1.4.32"
+graalvm-native-plugin = "0.9.2"
+kotlin-plugin = "1.5.21"
+
+[libraries]
+plugins-credentials = { module = "nu.studer:gradle-credentials-plugin", version.ref = "credentials-plugin"}
+
+plugins-dokka = { module = "org.jetbrains.dokka:dokka-gradle-plugin", version.ref = "dokka-plugin"}
+
+plugins-graalvm-native = { module = "org.graalvm.buildtools:native-gradle-plugin", version.ref = "graalvm-native-plugin" }
+
+plugins-kotlin-gradle = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin-plugin" }
+plugins-kotlin-allopen = { module = "org.jetbrains.kotlin:kotlin-allopen", version.ref = "kotlin-plugin" }
+plugins-kotlin-noarg = { module = "org.jetbrains.kotlin:kotlin-noarg", version.ref = "kotlin-plugin" }

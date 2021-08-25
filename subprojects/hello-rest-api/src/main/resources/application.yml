@@ -1,0 +1,9 @@
+---
+springdoc:
+  swagger-ui:
+    oauth:
+      app-name: hello
+      client-id: admin
+      client-secret: password
+      scopes: [ openid, hello.read ]
+      use-pkce-with-authorization-code-grant: true

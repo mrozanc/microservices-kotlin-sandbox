@@ -1,0 +1,29 @@
+---
+server:
+  port: 8888
+
+spring:
+  profiles:
+    active: [ composite ]
+  cloud:
+    config:
+      server:
+        prefix: config
+        composite:
+          - type: git
+            uri: file:/mnt/data/dev/microservices-kotlin-sandbox/subprojects/configuration-server/src/main/configuration-repository
+#            uri: file:/D:/dev/microservices-kotlin-sandbox/subprojects/configuration-server/src/main/configuration-repository
+            basedir: build/tmp/config-repo
+            clone-on-start: true
+            search-paths:
+              - "common/default"
+              - "common/{profile}"
+              - "{application}/default"
+              - "{application}/{profile}"
+
+encrypt:
+  key-store:
+    location: classpath:/server-hello.jks
+    alias: hellokey
+    password: changeme
+    secret: changeme
